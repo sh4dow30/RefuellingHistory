@@ -171,6 +171,14 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-Sh4dow.RefuellingHistory-20151014110804.mdf" />
+    <Content Include="App_Data\aspnet-Sh4dow.RefuellingHistory-20151014110804_log.ldf">
+      <DependentUpon>aspnet-Sh4dow.RefuellingHistory-20151014110804.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\db.mdf" />
+    <Content Include="App_Data\db_log.ldf">
+      <DependentUpon>db.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -227,9 +235,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -238,6 +244,10 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{50b3e3f5-d6a2-4103-b871-f06b8a9f97be}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Resources\Resources.csproj">
       <Project>{7fc90ddd-60ba-4824-8cbc-57db261a55d8}</Project>
       <Name>Resources</Name>

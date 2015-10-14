@@ -1,7 +1,9 @@
-﻿using System.Security.Claims;
+﻿using System.Collections.Generic;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Sh4dow.RefuellingHistory.Models;
 
 namespace Sh4dow.RefuellingHistory.WebApp.Models
 {

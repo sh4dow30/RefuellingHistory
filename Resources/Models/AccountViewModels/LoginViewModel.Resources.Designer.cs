@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Resources.Models.AccountViewModels {
+namespace Sh4dow.RefuellingHistory.Resources.Models.AccountViewModels {
     using System;
     
     
@@ -39,7 +39,8 @@ namespace Resources.Models.AccountViewModels {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Resources.Models.AccountViewModels.LoginViewModel.Resources", typeof(LoginViewModel_Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Sh4dow.RefuellingHistory.Resources.Models.AccountViewModels.LoginViewModel.Resour" +
+                            "ces", typeof(LoginViewModel_Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
