@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
-namespace Sh4dow.RefuellingHistory.Controllers
+namespace Sh4dow.RefuellingHistory.WebApp.Controllers
 {
     public class HomeController : Controller
     {

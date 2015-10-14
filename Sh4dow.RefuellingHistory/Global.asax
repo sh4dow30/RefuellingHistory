@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Sh4dow.RefuellingHistory.MvcApplication" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Sh4dow.RefuellingHistory.WebApp.MvcApplication" Language="C#" %>

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Sh4dow.RefuellingHistory.Models
+namespace Sh4dow.RefuellingHistory.WebApp.Models
 {
     public class ExternalLoginConfirmationViewModel
     {

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 
-namespace Sh4dow.RefuellingHistory.Models
+namespace Sh4dow.RefuellingHistory.WebApp.Models
 {
     public class IndexViewModel
     {

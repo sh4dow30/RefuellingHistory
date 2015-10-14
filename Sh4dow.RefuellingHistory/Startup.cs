@@ -1,8 +1,9 @@
 ﻿using Microsoft.Owin;
 using Owin;
+using Sh4dow.RefuellingHistory.WebApp;
 
-[assembly: OwinStartupAttribute(typeof(Sh4dow.RefuellingHistory.Startup))]
-namespace Sh4dow.RefuellingHistory
+[assembly: OwinStartup(typeof(Startup))]
+namespace Sh4dow.RefuellingHistory.WebApp
 {
     public partial class Startup
     {

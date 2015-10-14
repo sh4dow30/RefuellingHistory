@@ -1,14 +1,13 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using Sh4dow.RefuellingHistory.Models;
+using Sh4dow.RefuellingHistory.WebApp.Models;
 
-namespace Sh4dow.RefuellingHistory.Controllers
+namespace Sh4dow.RefuellingHistory.WebApp.Controllers
 {
     [Authorize]
     public class ManageController : Controller

@@ -3,11 +3,10 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
-using Microsoft.Owin.Security.Google;
 using Owin;
-using Sh4dow.RefuellingHistory.Models;
+using Sh4dow.RefuellingHistory.WebApp.Models;
 
-namespace Sh4dow.RefuellingHistory
+namespace Sh4dow.RefuellingHistory.WebApp
 {
     public partial class Startup
     {

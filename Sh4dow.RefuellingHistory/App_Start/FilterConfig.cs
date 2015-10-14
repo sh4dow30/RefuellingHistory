@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
-namespace Sh4dow.RefuellingHistory
+namespace Sh4dow.RefuellingHistory.WebApp
 {
     public class FilterConfig
     {

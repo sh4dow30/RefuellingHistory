@@ -1,18 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using System.Web;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using Sh4dow.RefuellingHistory.Models;
+using Sh4dow.RefuellingHistory.WebApp.Models;
 
-namespace Sh4dow.RefuellingHistory
+namespace Sh4dow.RefuellingHistory.WebApp
 {
     public class EmailService : IIdentityMessageService
     {

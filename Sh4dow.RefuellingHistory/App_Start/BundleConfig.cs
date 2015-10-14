@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
-namespace Sh4dow.RefuellingHistory
+namespace Sh4dow.RefuellingHistory.WebApp
 {
     public class BundleConfig
     {
