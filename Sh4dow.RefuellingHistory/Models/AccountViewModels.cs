@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using Resources;
 
 namespace Sh4dow.RefuellingHistory.WebApp.Models
 {
@@ -49,16 +51,16 @@ namespace Sh4dow.RefuellingHistory.WebApp.Models
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "Email")]
+        [Display(Name = "Email", ResourceType = typeof(LoginViewModel_Resources))]
         [EmailAddress]
         public string Email { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "Password", ResourceType = typeof(LoginViewModel_Resources))]
         public string Password { get; set; }
 
-        [Display(Name = "Remember me?")]
+        [Display(Name = "RememberMe", ResourceType = typeof(LoginViewModel_Resources))]
         public bool RememberMe { get; set; }
     }
 
