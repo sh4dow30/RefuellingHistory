@@ -4,9 +4,14 @@ namespace Sh4dow.RefuellingHistory.WebApp.Controllers
 {
     public class HomeController : Controller
     {
+        [AllowAnonymous]
         public ActionResult Index()
         {
-            return View();
+            if (User.Identity.IsAuthenticated)
+            {
+                return View("Index");
+            }
+            return View("IndexNonAuthorized");
         }
 
         public ActionResult About()
