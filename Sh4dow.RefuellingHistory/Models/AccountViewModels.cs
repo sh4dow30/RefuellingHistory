@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using Resources;
+using Resources.Models.AccountViewModels;
 
 namespace Sh4dow.RefuellingHistory.WebApp.Models
 {

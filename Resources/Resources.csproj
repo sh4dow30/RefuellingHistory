@@ -39,22 +39,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account.Login.Resources.pl-PL.Designer.cs">
-      <DependentUpon>Account.Login.Resources.pl-PL.resx</DependentUpon>
+    <Compile Include="Views\Account\Login.Resources.pl-PL.Designer.cs">
+      <DependentUpon>Login.Resources.pl-PL.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Account.Login.Resources.Designer.cs">
+    <Compile Include="Views\Account\Login.Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Account.Login.Resources.resx</DependentUpon>
+      <DependentUpon>Login.Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="LoginViewModel.Resources.pl-PL.Designer.cs">
+    <Compile Include="Models\AccountViewModels\LoginViewModel.Resources.pl-PL.Designer.cs">
       <DependentUpon>LoginViewModel.Resources.pl-PL.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="LoginViewModel.Resources.Designer.cs">
+    <Compile Include="Models\AccountViewModels\LoginViewModel.Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LoginViewModel.Resources.resx</DependentUpon>
@@ -62,19 +62,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Account.Login.Resources.pl-PL.resx">
+    <EmbeddedResource Include="Views\Account\Login.Resources.pl-PL.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Account.Login.Resources.pl-PL.Designer.cs</LastGenOutput>
+      <LastGenOutput>Login.Resources.pl-PL.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Account.Login.Resources.resx">
+    <EmbeddedResource Include="Views\Account\Login.Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Account.Login.Resources.Designer.cs</LastGenOutput>
+      <LastGenOutput>Login.Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginViewModel.Resources.pl-PL.resx">
+    <EmbeddedResource Include="Models\AccountViewModels\LoginViewModel.Resources.pl-PL.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>LoginViewModel.Resources.pl-PL.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginViewModel.Resources.resx">
+    <EmbeddedResource Include="Models\AccountViewModels\LoginViewModel.Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>LoginViewModel.Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
