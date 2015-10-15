@@ -5,28 +5,12 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
+<h2>@string.Format("{0} {1}", Model.Manufacturer, Model.Model) Details</h2>
 
 <div>
-    <h4>Car</h4>
+    @*        <h4></h4>*@
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Manufacturer)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Manufacturer)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Model)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Model)
-        </dd>
-
         <dt>
             @Html.DisplayNameFor(model => model.Year)
         </dt>
@@ -35,17 +19,45 @@
             @Html.DisplayFor(model => model.Year)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Image)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Image)
-        </dd>
-
     </dl>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+
+<div>
+    <h2>Refuellings History</h2>
+
+    <table class="table">
+        <tr>
+            <th>Mileage</th>
+            <th>Date</th>
+            <th>Fuel Amount</th>
+            <th>Cost</th>
+            <th>Cost per Liter</th>
+            <th>Last Refuelling Mileage</th>
+            <th>Fuel Consumption</th>
+        </tr>
+        @foreach (var refuelling in Model.Refuellings.OrderByDescending(r => r.Date).Take(5))
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => refuelling.Mileage)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => refuelling.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => refuelling.FuelAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => refuelling.Cost)
+                </td>
+                <td>
+                    @string.Format("{0:C}", refuelling.Cost / refuelling.FuelAmount)
+                </td>
+            </tr>
+        }
+    </table>
+</div>

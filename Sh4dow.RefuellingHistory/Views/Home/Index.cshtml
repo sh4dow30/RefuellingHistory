@@ -18,7 +18,7 @@
     {
         <tr>
             <td>
-                @string.Format("{0} {1}", car.Manufacturer, car.Model)
+                @Html.ActionLink(string.Format("{0} {1}", car.Manufacturer, car.Model), "Details", "Car", new { id = car.ID }, null)
             </td>
             <td>
                 @Html.DisplayFor(model => car.Year)

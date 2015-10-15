@@ -177,6 +177,10 @@
     <Compile Include="Migrations\201510150946280_CarMustBelongToUser.Designer.cs">
       <DependentUpon>201510150946280_CarMustBelongToUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201510151124489_IsFullRefuellAddedToRefuelling.cs" />
+    <Compile Include="Migrations\201510151124489_IsFullRefuellAddedToRefuelling.Designer.cs">
+      <DependentUpon>201510151124489_IsFullRefuellAddedToRefuelling.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -265,6 +269,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201510150946280_CarMustBelongToUser.resx">
       <DependentUpon>201510150946280_CarMustBelongToUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510151124489_IsFullRefuellAddedToRefuelling.resx">
+      <DependentUpon>201510151124489_IsFullRefuellAddedToRefuelling.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
