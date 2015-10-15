@@ -41,13 +41,18 @@ namespace Sh4dow.RefuellingHistory.Models
 
         public int ComputeMileageSinceLastRefuelling()
         {
-
             var priorRefuelling = GetPriorRefuelling();
             if (priorRefuelling != null)
             {
                 return Mileage - priorRefuelling.Mileage;
             }
             return -1;
+        }
+
+        public string ComputeMileageSinceLastRefuellingString()
+        {
+            var mileage = ComputeMileageSinceLastRefuelling();
+            return mileage == -1 ? "-" : mileage.ToString();
         }
 
         public decimal ComputeFuelConsumption()
@@ -60,5 +65,10 @@ namespace Sh4dow.RefuellingHistory.Models
             return -1;
         }
 
+        public string ComputeFuelConsumptionString()
+        {
+            decimal consumption = ComputeFuelConsumption();
+            return consumption == -1 ? "-" : string.Format("{0:0.00} l/100km", consumption);
+        }
     }
 }

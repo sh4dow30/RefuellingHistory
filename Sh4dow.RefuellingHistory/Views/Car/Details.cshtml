@@ -57,6 +57,12 @@
                 <td>
                     @string.Format("{0:C}", refuelling.Cost / refuelling.FuelAmount)
                 </td>
+                <td>
+                    @refuelling.ComputeMileageSinceLastRefuellingString();
+                </td>
+                <td>
+                    @refuelling.ComputeFuelConsumptionString();
+                </td>
             </tr>
         }
     </table>
