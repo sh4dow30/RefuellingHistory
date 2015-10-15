@@ -159,13 +159,28 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CarController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201510141033292_InitialCreate.cs" />
+    <Compile Include="Migrations\201510141033292_InitialCreate.Designer.cs">
+      <DependentUpon>201510141033292_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510150945214_initial.cs" />
+    <Compile Include="Migrations\201510150945214_initial.Designer.cs">
+      <DependentUpon>201510150945214_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510150946280_CarMustBelongToUser.cs" />
+    <Compile Include="Migrations\201510150946280_CarMustBelongToUser.Designer.cs">
+      <DependentUpon>201510150946280_CarMustBelongToUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\IndexModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -235,8 +250,23 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\IndexNonAuthorized.cshtml" />
+    <Content Include="Views\Car\Create.cshtml" />
+    <Content Include="Views\Car\Delete.cshtml" />
+    <Content Include="Views\Car\Details.cshtml" />
+    <Content Include="Views\Car\Edit.cshtml" />
+    <Content Include="Views\Car\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201510141033292_InitialCreate.resx">
+      <DependentUpon>201510141033292_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510150945214_initial.resx">
+      <DependentUpon>201510150945214_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510150946280_CarMustBelongToUser.resx">
+      <DependentUpon>201510150946280_CarMustBelongToUser.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
